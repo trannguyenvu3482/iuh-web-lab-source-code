@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      input {
+        margin-left: 80px;
+      }
+      textarea {
+        margin-left: 95px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <form>
+      <div>
+        <label for="email">Your email</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+      </div>
+      <div>
+        <label for="how">How did you hear of us?</label>
+        <select id="how">
+          <option value="1">Google</option>
+          <option value="2">Facebook</option>
+          <option value="3">Youtube</option>
+        </select>
+      </div>
+      <div>
+        <label>Newsletter</label>
+        <input type="checkbox" id="agree" />
+        <label for="agree"
+          >Ensure this box is checked if you would like to receive email
+          updates</label
+        >
+      </div>
+      <button type="submit">Send message</button>
+    </form>
+  </body>
+</html>
