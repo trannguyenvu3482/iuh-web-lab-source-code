@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+table {
+  background-color: #ffff98;
+  text-align: center;
+  border-color: orange;
+}
+
+th {
+  background-color: aqua;
+  color: slateblue;
+  padding: 4px;
+}
