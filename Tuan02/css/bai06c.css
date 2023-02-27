@@ -1,0 +1,31 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: wheat;
+    height: 100vh;
+}
+
+table {
+    background-color: aqua;
+    text-align: center;
+    border-color: violet;
+}
+
+table th {
+    background-color: violet;
+    padding: 0 10px;
+}
+
+table td {
+    color: violet;
+    border-width: 2px;
+}
+
+caption {
+    font-weight: bold;
+    color: violet;
+}

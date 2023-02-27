@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.table1 {
+    background-color: wheat;
+}
+
+td {
+    text-align: left;
+}
+
+a {
+    color: red;
+    font-weight: normal;
+}
+
+.section1,
+.section2,
+.section3 {
+    margin-top: 10px;
+    border-top: 2px solid black;
+}
+
+.table2,
+.table3,
+h5 {
+    margin-top: 10px;
+}
+
+.table2 td {
+    padding: 5px;
+}
