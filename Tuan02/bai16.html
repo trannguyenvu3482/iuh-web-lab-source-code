@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      form {
+        width: 200px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Travel reservation form</h1>
+    <h5>* denotes mandatory</h5>
+
+    <form>
+      <div>
+        <label for="name">Full name*:</label>
+        <input required type="text" placeholder="FirstName LastName" />
+      </div>
+      <div>
+        <label for="email">Email address*:</label>
+        <input
+          required
+          type="email"
+          name="email"
+          id="email"
+          placeholder="EMAIL_ADDRESS"
+        />
+      </div>
+      <div>
+        <label for="tour-select">Select Tour Package*: </label>
+        <select name="tour-select" id="tour-select">
+          <option value="1">Goa</option>
+          <option value="2">One</option>
+          <option value="3">Two</option>
+        </select>
+      </div>
+      <div>
+        <label for="arrival">Arrival date*:</label>
+        <input type="date" name="arrival" id="arrival" required />
+      </div>
+      <div>
+        <label for="noOfPerson">Number of persons*:</label>
+        <input required type="text" placeholder="UNKNOWN_TYPE" />
+      </div>
+      <div>
+        <label for="avail">What would you want to avail?*</label>
+        <div>
+          <label for="boarding">Boarding</label>
+          <input type="checkbox" name="boarding" id="check" />
+        </div>
+        <div>
+          <label for="fooding">Fooding</label>
+          <input type="checkbox" name="fooding" id="check" />
+        </div>
+        <div>
+          <label for="sightseeing">Sight seeing</label>
+          <input type="checkbox" name="sightseeing" id="check" />
+        </div>
+      </div>
+      <div>
+        <label for="discount">Discount Coupon code:</label>
+        <input required type="text" placeholder="UNKNOWN_TYPE" />
+      </div>
+      <div>
+        <label for="terms">Terms and Conditions</label>
+        <div>
+          <input type="radio" name="agree" id="rad" />
+          <label for="agree">I agree</label>
+          <input type="radio" name="disagree" id="" />
+          <label for="disagree">I disagree</label>
+        </div>
+      </div>
+      <button type="submit">Complete reservation</button>
+    </form>
+  </body>
+</html>
