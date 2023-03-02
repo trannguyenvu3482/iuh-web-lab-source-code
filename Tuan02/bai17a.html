@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      form {
+        background-color: #ffd078;
+      }
+
+      h2 {
+        text-align: center;
+      }
+
+      li {
+        margin-bottom: 15px;
+      }
+
+      .btns {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>Survey Form</h2>
+      <p>
+        If you are interested in purchasing one or more of our products, before
+        ordering please complete some or all of the following survey for our
+        marketing department. Answering any question is optional, and all
+        information will be kept strictly confidential. Thank you very much for
+        your time!
+      </p>
+
+      <ol>
+        <li>
+          <label for="name">What is your name:</label> <br />
+          <input type="text" id="name" name="name" size="30" />
+        </li>
+        <li>
+          <label for="dob">What is your date of birth:</label> <br />
+          <label for="month">Month: </label>
+          <select name="month" id="month">
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="4">April</option>
+            <option value="5">May</option>
+            <option value="6">June</option>
+            <option value="7">July</option>
+            <option value="8">August</option>
+            <option value="9">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          <label for="day">Date: </label>
+          <select name="day" id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <label for="year">Year: </label>
+          <input type="text" id="year" name="year" size="3" />
+        </li>
+        <li>
+          <label for="mailing-address"
+            >What is your mailing address (if you would like to have a hard copy
+            of our catalog sent to you)?</label
+          >
+          <br />
+          <textarea
+            name="mailing-address"
+            id="mailing-address"
+            cols="50"
+            rows="4"
+          >
+Number/P.O. Box/Route:
+Street/Avenue/Road:
+City:
+State/Zip:</textarea
+          >
+        </li>
+        <li>
+          <label for="email">What is your email address?</label> <br />
+          <input type="email" id="email" name="email" size="30" />
+        </li>
+        <li>
+          <label for="view">Have you viewed our online product catalog?</label>
+          <br />
+          <input type="radio" id="yes" name="view" value="yes" />
+          <label for="yes">Yes</label>
+          <input type="radio" id="no" name="view" value="no" />
+          <label for="no">No</label>
+        </li>
+        <li>
+          <label for="catalog"
+            >If so, what product(s), besides the one you are ordering, might you
+            be interested in purchasing in the future? (Check all that
+            apply.)</label
+          >
+          <br />
+          <input type="checkbox" id="catalog" name="catalog" value="vcr" />
+          <label for="vcr">VCR</label><br />
+          <input type="checkbox" id="catalog" name="catalog" value="tv" />
+          <label for="tv">Big Screen TV</label><br />
+          <input type="checkbox" id="catalog" name="catalog" value="audio" />
+          <label for="audio">Audio Equipment</label><br />
+          <input type="checkbox" id="catalog" name="catalog" value="video" />
+          <label for="video">Video Equipment</label><br />
+          <input type="checkbox" id="catalog" name="catalog" value="other" />
+          <label for="other">Other</label>
+          <input type="text" placeholder="Please List:" />
+          <br />
+        </li>
+        <li>
+          <label for="comments"
+            >Do you have any questions, comments or suggestions before
+            proceeding to the Other Form?</label
+          >
+          <br />
+          <textarea name="comments" id="comments" cols="50" rows="4"></textarea>
+        </li>
+      </ol>
+      <div class="btns">
+        <button>Send form</button>
+        <button>Clear form</button>
+      </div>
+    </form>
+  </body>
+</html>
