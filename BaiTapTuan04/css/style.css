@@ -93,11 +93,22 @@ body {
 .header-time-btn {
   width: 90px;
   height: 36px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
   border-radius: 20px;
   border: 1px solid red;
   color: red;
   background-color: #fff;
+}
+
+.header-time-btn span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
 }
 
 .header-bottom {
@@ -182,12 +193,30 @@ body {
   border-radius: 6px;
 }
 
+.user-name span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #1dd75b;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
 .user-name.small {
   width: 100px;
   height: 26px;
   top: 10px;
   left: 8px;
   font-size: 12px;
+}
+
+.user-name.small span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #1dd75b;
+  border-radius: 50%;
+  margin-right: 4px;
 }
 
 .mic-btn {
