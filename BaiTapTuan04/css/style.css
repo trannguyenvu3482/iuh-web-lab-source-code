@@ -300,6 +300,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: red;
+}
+
+.participants-header button span {
+  font-size: 22px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+.participants-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .participants-list {
@@ -354,6 +367,7 @@ body {
   background-color: #f8f9fa;
   padding: 10px;
   margin-left: 46px;
+  width: fit-content;
 }
 
 .chat-bottom p {
@@ -367,10 +381,38 @@ body {
   height: 40px;
 }
 
+.chat-avatar-container {
+  position: relative;
+}
+
+.chat-avatar-container span {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #1dd75b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+}
+
 .input-bar {
+  position: relative;
+  display: flex;
   height: 40px;
   width: 320px;
   margin-right: 10px;
+}
+
+.input-bar img {
+  width: 24px;
+  right: 12px;
+  top: 10px;
+  position: absolute;
 }
 
 .input-bar input {
