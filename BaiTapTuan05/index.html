@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Product Page</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <div class="header-left">
+            <img src="./img/Logo_Small.png" alt="" class="header-left__logo" />
+
+            <ul class="header-left__menu">
+              <li class="header-left__menu-item active">Home</li>
+              <li class="header-left__menu-item">Promotions</li>
+              <li class="header-left__menu-item">Best-sellers</li>
+              <li class="header-left__menu-item">New releases</li>
+              <li class="header-left__menu-item">Support</li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="header-right__input-bar">
+              <img
+                src="./img/search-icon.png"
+                alt=""
+                class="header-right__search-icon"
+              />
+              <input
+                type="text"
+                class="header-right__input"
+                placeholder="Search..."
+              />
+            </div>
+            <img
+              src="./img/Bell_Icon.png"
+              alt=""
+              class="header-right__noti-btn"
+            />
+            <img
+              src="./img/Cart_Icon.png"
+              alt=""
+              class="header-right__cart-btn"
+            />
+            <img
+              src="./img/Avatar_User.png"
+              alt=""
+              class="header-right__avatar"
+            />
+          </div>
+        </header>
+        <main>
+          <div class="main-container">
+            <span class="page-breadcrumbs"
+              >Home / Category / <span>Product title</span></span
+            >
+            <section class="product">
+              <div class="product__header">
+                <h1 class="product__title">Product title</h1>
+                <div class="product__subtitle">
+                  <div class="product__subtitle-reviews">
+                    <img src="./img/Ratings_4HalfStar.png" alt="" />
+                    <b>4.20</b>
+                    <span>(99 reviews)</span>
+                  </div>
+                  <div class="product__subtitle-btns">
+                    <button>Share</button>
+                    <button>Save</button>
+                  </div>
+                </div>
+              </div>
+              <div class="product__images">
+                <img
+                  src="./img/Orange_Main.png"
+                  alt=""
+                  class="product__images-image"
+                />
+                <div class="product__images-sub">
+                  <img
+                    src="./img/Charcoal.png"
+                    alt=""
+                    class="product__images-image"
+                  />
+                  <img
+                    src="./img/Orange_Side.png"
+                    alt=""
+                    class="product__images-image"
+                  />
+                  <img
+                    src="./img/Flower.png"
+                    alt=""
+                    class="product__images-image"
+                  />
+                  <img
+                    src="./img/Grass.png"
+                    alt=""
+                    class="product__images-image"
+                  />
+                </div>
+              </div>
+              <div class="product__description">
+                <div class="product__description-left">
+                  <h2 class="product__description-left-title">
+                    Product description
+                  </h2>
+                  <p class="product__description-left-desc">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quod illo officiis rem hic! Velit excepturi repudiandae
+                    incidunt rem hic, a explicabo iste sapiente doloribus
+                    deleniti corporis illum nesciunt cumque libero. Lorem, ipsum
+                    dolor sit amet consectetur adipisicing elit. <br />
+                    Deleniti impedit veniam repudiandae earum eaque nesciunt
+                    ullam sit iure sed corporis, a obcaecati! Recusandae eveniet
+                    commodi ea dolore impedit asperiores sint eius neque facere?
+                    Odit, nulla explicabo. Illo dignissimos iusto aperiam,
+                    commodi laboriosam quas. Dolore possimus nostrum aut
+                    mollitia eligendi, reprehenderit doloremque tempora pariatur
+                    fugit assumenda! In nemo mollitia dolore nobis.
+                  </p>
+                  <div class="product__description-left-services">
+                    <div class="product__description-left-services-item">
+                      <img src="./img/Truck_Icon.png" alt="" />
+                      <span>Free delivery</span>
+                    </div>
+                    <div class="product__description-left-services-item">
+                      <img src="./img/Arrow_bend_up_left.png" alt="" />
+                      <span>7 days return</span>
+                    </div>
+                    <div class="product__description-left-services-item">
+                      <img src="./img/Globe_Icon.png" alt="" />
+                      <span>Made in USA</span>
+                    </div>
+                    <div class="product__description-left-services-item">
+                      <img src="./img/Medal_Icon.png" alt="" />
+                      <span>2 years guarentee</span>
+                    </div>
+                    <div class="product__description-left-services-item">
+                      <img src="./img/Chats_Icon.png" alt="" />
+                      <span>100% authentic</span>
+                    </div>
+                    <div class="product__description-left-services-item">
+                      <img src="./img/Checks_Icon.png" alt="" />
+                      <span>24/7 customer support</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__description-right">
+                  <span class="product__description-right-price">$99</span>
+                  <select
+                    name=""
+                    id=""
+                    class="product__description-right-select"
+                  >
+                    <option value="color" selected="false">Color</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                  </select>
+                  <select
+                    name=""
+                    id=""
+                    class="product__description-right-select"
+                  >
+                    <option value="color" selected="false">Size</option>
+                    <option value="40">40</option>
+                    <option value="41">41</option>
+                    <option value="42">42</option>
+                    <option value="43">43</option>
+                  </select>
+                  <select
+                    name=""
+                    id=""
+                    class="product__description-right-select"
+                  >
+                    <option value="color" selected="false">3</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                  </select>
+                  <div class="product__description-right-total">
+                    <span>Total</span>
+                    <span><b>$265</b></span>
+                  </div>
+                  <button class="product__description-right-buy-btn">
+                    Buy now
+                  </button>
+                  <button class="product__description-right-add-cart">
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </section>
+            <section class="product__reviews">
+              <div class="product__reviews-header">
+                <div class="product__reviews-header-left">
+                  <h2 class="product__reviews-title">Reviews</h2>
+                  <img src="./img/Ratings_Single_Star.png" alt="" />
+                  <span><b>4.20</b></span>
+                  <span>(99 reviews)</span>
+                </div>
+                <div class="product__reviews-header-right">
+                  <span>Show all reviews ></span>
+                </div>
+              </div>
+
+              <div class="product__reviews-review">
+                <div class="product__reviews-review-item">
+                  <div class="product__reviews-review-item-top">
+                    <img src="./img/Avatar_Jay.png" alt="" />
+                    <div class="product__reviews-review-item-top-info">
+                      <span class="product__reviews-review-item-top-info-name"
+                        >Jay Rutherford</span
+                      >
+                      <span class="product__reviews-review-item-top-info-date"
+                        >3d ago</span
+                      >
+                      <img src="./img/Ratings_5Star.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="product__reviews-review-item-bottom">
+                    Nulla laboris fugiat fugiat minim minim excepteur eiusrnod
+                    quis. Laborum est minim id cillum nostrud cillum
+                    consectetur.
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="product__related"></section>
+          </div>
+        </main>
+        <footer></footer>
+      </div>
+    </div>
+  </body>
+</html>
