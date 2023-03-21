@@ -35,9 +35,6 @@ header {
   height: 100%;
 }
 
-.header-left__logo {
-}
-
 .header-left__menu {
   display: flex;
   align-items: center;
@@ -99,8 +96,11 @@ header {
 }
 
 /* Main */
+main {
+  border-bottom: 1px solid #eee;
+}
 .main-container {
-  margin: 54px 126px 48px;
+  margin: 54px 126px 84px;
 }
 
 .page-breadcrumbs {
@@ -147,6 +147,32 @@ header {
 .product__subtitle-reviews span {
   white-space: nowrap;
   color: #ccc;
+}
+
+.product__subtitle-btns {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+.product__subtitle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: none;
+  border: none;
+  gap: 5px;
+  font-size: 16px;
+}
+
+.product__subtitle-btns-share img {
+  width: 20px;
+}
+
+.product__subtitle-btns-save img {
+  width: 20px;
 }
 
 .product__images {
@@ -254,6 +280,10 @@ header {
   cursor: pointer;
 }
 
+.product__reviews {
+  border-bottom: 2px solid #ddd;
+}
+
 .product__reviews-header {
   margin: 55px 0 40px 0;
   display: flex;
@@ -275,4 +305,198 @@ header {
 .product__reviews-header-right {
   color: #ccc;
   font-size: 14px;
+}
+
+.product__reviews-review {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+  margin-bottom: 56px;
+}
+
+.product__reviews-review-item-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.product__reviews-review-item-top-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 4px;
+}
+
+.product__reviews-review-item-top-info img {
+  width: 70px;
+}
+
+.product__reviews-review-item-top-info-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.product__reviews-review-item-top-info-name {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product__reviews-review-item-top-info-container span {
+  color: #bbb;
+  font-size: 12px;
+}
+
+.product__reviews-review-item-bottom {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Related Products */
+.product-related__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.product-related__list-item {
+  width: 280px;
+  border: 1px solid #f4f4f4;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.product-related__list-item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px;
+}
+
+.product-related__list-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-related__list-item-title h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.product-related__list-item-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00bdd6;
+}
+
+.product-related__list-item-ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-related__list-item-ratings span {
+  color: #ccc;
+  font-size: 12px;
+}
+
+/* Footer */
+.footer-subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.footer-subscribe__logo {
+  width: 130px;
+  margin-bottom: 40px;
+}
+
+.footer-subscribe__tag {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.footer-subscribe__email {
+  width: 380px;
+  height: 40px;
+  display: flex;
+  border-radius: 6px;
+}
+
+.footer-subscribe__email input {
+  width: 265px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+  background-color: #f3f4f6;
+  padding-left: 28px;
+}
+
+.footer-subscribe__email input::placeholder {
+  color: #ccc;
+}
+
+.footer-subscribe__email button {
+  width: 115px;
+  height: 40px;
+  background-color: #00bdd6;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.footer-navigations {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 64px;
+  gap: 100px;
+}
+
+.footer-navigations__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-navigations__column h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-navigations__column ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-desc {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.footer-desc button {
+  width: 128px;
+  background-color: #f3f4f6;
+  border: none;
+  text-align: left;
+  padding: 10px;
+}
+
+.footer-desc__icons {
+  display: flex;
+  gap: 16px;
 }
