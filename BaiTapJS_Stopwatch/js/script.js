@@ -9,6 +9,7 @@ const timerSec = document.querySelector('.seconds');
 let interval;
 
 // Function
+alert('Timer has started');
 
 // Declare a "timer" function to increase the timer
 const handleTimer = () => {
@@ -32,13 +33,13 @@ const handleTimer = () => {
 
   // Update HTML elements, if smaller than 10, display as "0x"
   if (seconds < 10) {
-    timerSec.textContent = `0${seconds}`;
+    timerSec.textContent = '0' + seconds;
   } else {
     timerSec.textContent = seconds;
   }
 
   if (minutes < 10) {
-    timerMin.textContent = `0${minutes}`;
+    timerMin.textContent = '0' + minutes;
   } else {
     timerMin.textContent = minutes;
   }
@@ -47,6 +48,7 @@ const handleTimer = () => {
 // Start button event handler
 btnStart.addEventListener('click', () => {
   // Check if timer is already running
+
   if (interval) {
     alert('Timer is already running');
   } else {
@@ -71,5 +73,6 @@ btnReset.addEventListener('click', () => {
   timerMin.textContent = '00';
   timerSec.textContent = '00';
   clearInterval(interval);
+  interval = null;
   alert('Timer has reset');
 });

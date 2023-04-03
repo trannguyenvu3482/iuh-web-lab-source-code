@@ -1,77 +1,116 @@
-// Get elements from DOM
-const btnStart = document.querySelector('.btn-start');
-const btnStop = document.querySelector('.btn-stop');
-const btnReset = document.querySelector('.btn-reset');
-const timerMin = document.querySelector('.minutes');
-const timerSec = document.querySelector('.seconds');
+// Get buttons from DOM
+const btnOne = document.querySelector('.btn-1');
+const btnTwo = document.querySelector('.btn-2');
+const btnThree = document.querySelector('.btn-3');
+const btnFour = document.querySelector('.btn-4');
+const btnFive = document.querySelector('.btn-5');
+const btnSix = document.querySelector('.btn-6');
+const btnSeven = document.querySelector('.btn-7');
+const btnEight = document.querySelector('.btn-8');
+const btnNine = document.querySelector('.btn-9');
+const btnZero = document.querySelector('.btn-0');
+const btnDoubleZero = document.querySelector('.btn-00');
+const btnPlus = document.querySelector('.btn-plus');
+const btnMinus = document.querySelector('.btn-minus');
+const btnMultiply = document.querySelector('.btn-mul');
+const btnDivide = document.querySelector('.btn-divide');
+const btnEqual = document.querySelector('.btn-equal');
+const btnClear = document.querySelector('.btn-clear');
+const results = document.querySelector('.results');
 
-// Declare a "interval" variable to store the current timer
-let interval;
+// Current calculation string
+let currentCalculation = '';
 
-// Declare a "timer" function to increase the timer
-const timer = () => {
-  // Parse string from HTML to number
-  let minutes = parseInt(timerMin.textContent, 10);
-  let seconds = parseInt(timerSec.textContent, 10);
-
-  // Increase seconds counter
-  seconds++;
-
-  // Check if seconds is equal to 59
-  if (seconds === 59) {
-    seconds = 0;
-    minutes++;
-  }
-
-  // Check if minutes is equal to 60, if so, stop the timer
-  if (minutes === 60) {
-    clearInterval(interval);
-  }
-
-  // Update HTML elements, if smaller than 10, display as "0x"
-  if (seconds < 10) {
-    timerSec.textContent = `0${seconds}`;
-  } else {
-    timerSec.textContent = seconds;
-  }
-
-  if (minutes < 10) {
-    timerMin.textContent = `0${minutes}`;
-  } else {
-    timerMin.textContent = minutes;
-  }
+// Set HTML as calculation result
+const displayResult = (result) => {
+  results.textContent = result;
 };
 
-// Start button event handler
-btnStart.addEventListener('click', () => {
-  // Check if timer is already running
-  if (interval) {
-    alert('Timer is already running');
-  } else {
-    interval = setInterval(timer, 1000);
-    alert('Timer has started');
-  }
+// Event listeners
+btnOne.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '1';
+  displayResult(currentCalculation);
+});
+1 + 1;
+btnTwo.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '2';
+  displayResult(currentCalculation);
 });
 
-// Stop button event handler
-btnStop.addEventListener('click', () => {
-  if (interval) {
-    clearInterval(interval);
-    interval = null;
-    alert('Timer has stopped');
-  } else {
-    alert('Timer is already stopped');
-  }
+btnThree.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '3';
+  displayResult(currentCalculation);
 });
 
-// Reset button event handler
-btnReset.addEventListener('click', () => {
-  if (interval) {
-    timerMin.textContent = '00';
-    timerSec.textContent = '00';
-    clearInterval(interval);
-    alert('Timer has reset');
-  } else {
-    alert('Timer is already stopped');
-  }
+btnFour.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '4';
+  displayResult(currentCalculation);
+});
+
+btnFive.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '5';
+  displayResult(currentCalculation);
+});
+
+btnSix.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '6';
+  displayResult(currentCalculation);
+});
+
+btnSeven.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '7';
+  displayResult(currentCalculation);
+});
+
+btnEight.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '8';
+  displayResult(currentCalculation);
+});
+
+btnNine.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '9';
+  displayResult(currentCalculation);
+});
+
+btnZero.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '0';
+  displayResult(currentCalculation);
+});
+
+btnDoubleZero.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '00';
+  displayResult(currentCalculatioResultn);
+});
+
+btnPlus.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '+';
+  displayResult(currentCalculation);
+});
+
+btnMinus.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '-';
+  displayResult(currentCalculation);
+});
+
+btnMultiply.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '*';
+  displayResult(currentCalculation);
+});
+
+btnDivide.addEventListener('click', () => {
+  currentCalculation = currentCalculation + '/';
+
+  displayResult(currentCalculation);
+});
+result;
+
+btnEqual.addEventListener('click', () => {
+  currentCalculation = eval(currentCalculation);
+
+  displayResult(currentCalculation);
+});
+
+btnClear.addEventListener('click', () => {
+  currentCalculation = '';
+  displayResult('0');
 });
