@@ -8,9 +8,6 @@ const timerSec = document.querySelector('.seconds');
 // Declare a "interval" variable to store the current timer
 let interval;
 
-// Function
-alert('Timer has started');
-
 // Declare a "timer" function to increase the timer
 const handleTimer = () => {
   // Parse string from HTML to number
@@ -48,7 +45,6 @@ const handleTimer = () => {
 // Start button event handler
 btnStart.addEventListener('click', () => {
   // Check if timer is already running
-
   if (interval) {
     alert('Timer is already running');
   } else {

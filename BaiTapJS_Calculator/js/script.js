@@ -79,7 +79,7 @@ btnZero.addEventListener('click', () => {
 
 btnDoubleZero.addEventListener('click', () => {
   currentCalculation = currentCalculation + '00';
-  displayResult(currentCalculatioResultn);
+  displayResult(currentCalculation);
 });
 
 btnPlus.addEventListener('click', () => {
@@ -102,7 +102,6 @@ btnDivide.addEventListener('click', () => {
 
   displayResult(currentCalculation);
 });
-result;
 
 btnEqual.addEventListener('click', () => {
   currentCalculation = eval(currentCalculation);
