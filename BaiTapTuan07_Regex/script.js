@@ -6,6 +6,7 @@ const btnTwo = document.querySelector('.btnTwo');
 btnOne.addEventListener('click', () => {
   const value = inputOne.value;
   const regex = /^0\d{9}$/g;
+
   if (regex.test(value)) {
     alert('Chuỗi nhập vào hợp lệ');
   } else {
