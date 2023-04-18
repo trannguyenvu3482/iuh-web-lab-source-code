@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <img class="banner" src="../images/banner.png" alt="" />
+    <div class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="collapse navbar-collapse">
+        <div class="navbar-nav">
+          <button class="btn btn-link">Trang chủ</button
+          ><button
+            class="btn btn-link"
+            data-toggle="modal"
+            data-target="#myModal"
+          >
+            Đặt lịch
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Mã bệnh nhân</th>
+            <th scope="col">Mật khẩu</th>
+            <th scope="col">Ngày khám</th>
+            <th scope="col">Phụ thu dịch vụ</th>
+            <th scope="col">Chuyên khoa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>123456a</td>
+            <td>BN-012345</td>
+            <td>12/8/2020</td>
+            <td>1000000</td>
+            <td>Ngoại tổng quát</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div id="myModal" class="modal" tabindex="-1">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Đặt lịch khám online</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="form">
+              <div class="form-group benhNhan">
+                <label>Mã bệnh nhân:</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  placeholder="Mã bệnh nhân..."
+                />
+
+                <p class="text-error"></p>
+              </div>
+              <div class="form-group matKhau">
+                <label>Mật khẩu:</label>
+                <input
+                  class="form-control"
+                  type="password"
+                  placeholder="Mật khẩu..."
+                />
+
+                <p class="text-error"></p>
+              </div>
+              <div class="form-group ngayKham">
+                <label>Ngày khám:</label>
+                <input
+                  class="form-control"
+                  type="date"
+                  placeholder="Ngày khám..."
+                />
+
+                <p class="text-error"></p>
+              </div>
+              <div class="form-group">
+                <label>Loại dịch vụ:</label>
+                <div class="checkbox-container">
+                  <div class="checkbox-item">
+                    <input class="form-control" type="checkbox" />
+                    <label>Khám bệnh theo yêu cầu</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input class="form-control" type="checkbox" />
+                    <label>Điều trị ngoại trú</label>
+                  </div>
+                  <div class="checkbox-item">
+                    <input class="form-control" type="checkbox" />
+                    <label>Bác sĩ theo yêu cầu</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Chuyên khoa:</label>
+                <select class="form-control chuyenKhoa">
+                  <option value="Ngoại tổng quát">Ngoại tổng quát</option>
+                  <option value="Nhi">Nhi</option>
+                  <option value="Nội tổng quát">Nội tổng quát</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                Đặt lịch
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary btn-close"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="student-name">
+      <h1>Tran Nguyen Vu - 21088201</h1>
+    </div>
+  </body>
+
+  <script src="../js/script.js"></script>
+</html>

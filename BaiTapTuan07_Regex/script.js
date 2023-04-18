@@ -16,7 +16,7 @@ btnOne.addEventListener('click', () => {
 
 btnTwo.addEventListener('click', () => {
   const value = inputTwo.value;
-  const regex = /^[A-Za-z]+$/;
+  const regex = /^[A-Za-z]+$/g;
 
   if (regex.test(value)) {
     alert('Chuỗi nhập vào hợp lệ');
