@@ -17,8 +17,10 @@ const modal = document.getElementById('myModal');
 
 const btnClose = document.querySelector('.btn-close');
 
+// Đếm số dòng hiện tại trong bảng, mặc định là 1
 let rowCounter = 1;
 
+// Hàm kiểm tra regex các ô input
 const regexCheck = () => {
   const regexMaBN = /^BN\-[0-9]{5}$/g;
   const regexMatKhau = /^\w{6,}$/g;
@@ -48,6 +50,7 @@ const regexCheck = () => {
   return errorCount === 0;
 };
 
+// Xử lí sự kiện nút đặt lịch trong form
 btnSubmit.addEventListener('click', () => {
   // Check Regex
   let countChkBox = 0;
