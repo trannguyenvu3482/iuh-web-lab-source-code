@@ -19,6 +19,10 @@ const checkMaSP = (maSP) => {
   }
 };
 
+txtMa.addEventListener('blur', () => {
+  checkMaSP(txtMa.value);
+});
+
 btnNhapKho.addEventListener('click', () => {
   const maSP = txtMa.value;
   const tenSP = txtTen.value;

@@ -109,24 +109,6 @@
                 <td>Online</td>
                 <td>10%</td>
               </tr>
-              <tr>
-                <td>SP1234XK</td>
-                <td>Thu</td>
-                <td>2023-04-21</td>
-                <td>Nuoc ngot</td>
-                <td>Nhap khau</td>
-                <td>Online</td>
-                <td>10%</td>
-              </tr>
-              <tr>
-                <td>SP1234XK</td>
-                <td>Thu</td>
-                <td>2023-04-21</td>
-                <td>Nuoc ngot</td>
-                <td>Nhap khau</td>
-                <td>Online</td>
-                <td>10%</td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -244,5 +226,58 @@
     </div>
   </body>
 
+  <!-- JQuery method -->
+  <!-- <script>
+    $(document).ready(function () {
+      function ktma() {
+        let ma = $('.txt-ma').val();
+        let patMa = /^(SP)\d{4}(NK|XK)$/;
+        if (patMa.test(ma)) {
+          $('.errorMa').html('*');
+          $('txt-ma').removeClass('border-text');
+          return true;
+        } else {
+          $('.errorMa').html('Ma sai');
+          $('.errorMa').addClass('error');
+          $('.txt-ma').addClass('border-text');
+          return false;
+        }
+      }
+
+      $('.txt-ma').blur(function (e) {
+        ktma();
+      });
+
+      $('.btn-nhapkho').click(function (e) {
+        let ma = $('.txt-ma').val();
+        let ngay = $('.txt-ngay').val();
+        let ten = $('.txt-ten').val();
+        let hinhthuc = $("input[name='thanhtoan']:checked").val();
+        let loaihanghoa = [];
+        $.each($("input[name='loaihanghoa']:checked"), function () {
+          loaihanghoa.push($(this).val());
+        });
+
+        let thue = '10%';
+        let loai = $('.select-loai').val();
+
+        if (ktma()) {
+          let tr = `<tr>
+          <td>${ma}</td>
+          <td>${ten}</td>
+          <td>${ngay}</td>
+          <td>${loai}</td>
+          <td>${loaihanghoa.join(', ')}</td>
+          <td>${hinhthuc}</td>
+          <td>${thue}</td>
+          </tr>`;
+          $('table tbody').append(tr);
+          $('.btn-close').click();
+        }
+      });
+    });
+  </script> -->
+
+  <!-- JS method -->
   <script src="../js/script.js"></script>
 </html>
