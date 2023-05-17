@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+     <img class="logo w-100 mb-3" src="../image/logo175.png" alt="">
+
+     <div class="container-fluid">
+        <nav class="navbar navbar-expand bg-info">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link text-white">Trang chủ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Giới thiệu</a></li>
+                <li class="nav-item"><a href="#" class="nav-link text-white">Chuyên khoa</a></li>
+                <li class="nav-item">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#frmDK">Đăng ký khám bệnh</button>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="middle-div mt-5">
+            <h1 class="text-center">DANH SÁCH ĐĂNG KÝ KHÁM BỆNH TRỰC TUYẾN</h1>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Hình thức</th>
+                        <th>Mã thẻ bảo hiểm</th>
+                        <th>Họ tên</th>
+                        <th>Tuổi</th>
+                        <th>Số điện thoại</th>
+                        <th>Địa chỉ</th>
+                        <th>Dịch vụ</th>
+                        <th>Tỉ lệ thanh toán</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row">(1)</td>
+                        <td>(2)</td>
+                        <td>(3)</td>
+                        <td>(4)</td>
+                        <td>(5)</td>
+                        <td>(6)</td>
+                        <td>(7)</td>
+                        <td>(8)</td>
+                        <td>(9)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="tongso text-right font-weight-bold">
+                Tổng số: <span class="text-danger">XX</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="mt-4 bg-info w-100 p-3 text-white font-weight-bold">21088201-Tran Nguyen Vu - DHKTPM17C</footer>
+    
+    <div class="modal" id="frmDK">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">THÔNG TIN BỆNH NHÂN ĐĂNG KÝ</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="radio" class="form-check-inline" value="Nội trú" name="noitru-ngoaitru">
+                            Nội trú
+                            <input type="radio" class="form-check-inline" value="Ngoại trú" name="noitru-ngoaitru">
+                            Ngoại trú
+                        </div>
+
+                        <div class="form-group">
+                          <label>Mã thẻ bảo hiểm</label>
+                          <input type="text" class="form-control txt-mathe">
+                          <span class="text-danger font-italic err-mathe">(*)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Họ tên</label>
+                            <input type="text" class="form-control txt-hoten">
+                            <span class="text-danger font-italic err-hoten">(*)</span>
+                        </div>
+                          
+                        <div class="form-group">
+                            <label>Tuổi</label>
+                            <input type="text" class="form-control txt-tuoi">
+                            <span class="text-danger font-italic err-tuoi">(*)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Số điện thoại</label>
+                            <input type="text" class="form-control txt-sdt" placeholder="Số điện thoại">
+                            <span class="text-danger font-italic err-sdt">(*)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Địa chỉ</label>
+                            <input type="text" class="form-control txt-diachi" placeholder="Địa chỉ">
+                            <span class="text-danger font-italic err-diachi">(*)</span>
+                        </div>
+
+                        <div class="form-group form-check-inline">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="chkbox" value="Bác sĩ theo yêu cầu"> Bác sĩ theo yêu cầu
+                            </label>
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="chkbox" value="Phòng dịch vụ cao cấp"> Phòng dịch vụ cao cấp
+                            </label>
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="chkbox" value="Trả kết quả tại nhà"> Trả kết quả tại nhà
+                            </label>
+                        </div>
+
+                        <div class="form-group">
+                          <label>Đối tượng Khám bệnh</label>
+                          <select class="form-control select-dt" name="select" >
+                            <option value="1">Quân nhân</option>
+                            <option value="2">Cán bộ</option>
+                            <option value="3">Công dân</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tỉ lệ thanh toán</label>
+                            <input type="text" class="form-control txt-tile" value="40%" disabled>
+                            <span class="text-danger font-italic err-tile">(*)</span>
+                        </div>
+
+                        <button class="btn btn-info btn-dangky">Đăng ký</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="text-right">21088201-Tran Nguyen Vu-DHKTPM17C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="../js/script.js"></script>
+</html>
